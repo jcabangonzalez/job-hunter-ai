@@ -1,0 +1,34 @@
+[
+    {
+      "title": "Junior Python Automation Engineer",
+      "company": "TechFlow",
+      "location": "Remote",
+      "date_posted": "2026-03-10",
+      "description": "Remote role using Python automation and scripting.",
+      "url": "https://example.com/job1"
+    },
+    {
+      "title": "SOC Analyst",
+      "company": "BlueTeam Ops",
+      "location": "Remote",
+      "date_posted": "2026-03-09",
+      "description": "Monitor alerts and analyze logs. Entry level.",
+      "url": "https://example.com/job2"
+    },
+    {
+      "title": "Senior Staff Security Architect",
+      "company": "BigShield",
+      "location": "Hybrid",
+      "date_posted": "2026-03-01",
+      "description": "Senior cybersecurity architecture role.",
+      "url": "https://example.com/job3"
+    },
+    {
+      "title": "Marketing Coordinator",
+      "company": "BrightSales",
+      "location": "Onsite",
+      "date_posted": "2026-03-08",
+      "description": "Marketing campaigns and brand strategy.",
+      "url": "https://example.com/job4"
+    }
+  ]

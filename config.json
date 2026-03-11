@@ -1,0 +1,6 @@
+{
+    "keywords": ["python", "cybersecurity", "soc", "log analysis", "automation"],
+    "exclude": ["onsite", "principal", "director", "staff"],
+    "preferred_levels": ["entry", "junior", "intermediate"],
+    "max_age_days": 7
+  }
