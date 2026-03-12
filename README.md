@@ -27,3 +27,14 @@ The goal is to speed up the job search process by automatically ranking opportun
 ## Example Output
 
 The tool generates a report like:
+
+## How to Run
+
+Clone the repository and run the tool:
+
+```bash
+git clone https://github.com/jcabangonzalez/job-hunter-ai.git
+cd job-hunter-ai
+
+pip install -r requirements.txt
+python main.py
