@@ -2,34 +2,23 @@ import requests
 
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "qwen2.5-coder:latest"
+MODEL_NAME = "llama3.1:latest"
 
 
 def build_prompt(job):
     return f"""
-You are evaluating whether this job matches a candidate.
+You are a job fit evaluator. Respond ONLY in this exact format, nothing else:
 
-Candidate profile:
-- Python
-- Cybersecurity
-- SOC
-- Log analysis
-- Automation
-- Prefers remote jobs
-- Prefers entry, junior, or intermediate roles
+VERDICT: <STRONG | MEDIUM | WEAK>
+REASON: <one sentence max>
+
+Candidate: Python, Cybersecurity, SOC, Log analysis, Automation. Remote only. Entry/junior/intermediate level.
 
 Job:
 Title: {job.get("title", "")}
-Company: {job.get("company", "")}
 Location: {job.get("location", "")}
 Description: {job.get("description", "")}
-
-Return only this format:
-
-fit: <good / medium / weak>
-reason: <one short sentence>
 """
-    
 
 def analyze_job_with_ollama(job):
     prompt = build_prompt(job)
