@@ -2,3 +2,6 @@ venv/
 __pycache__/
 *.pyc
 reports/
+venv/
+__pycache__/
+*.pyc

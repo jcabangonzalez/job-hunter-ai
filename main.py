@@ -1,7 +1,7 @@
 from filter import load_config, load_jobs, filter_jobs
 from ranker import analyze_job_with_ollama
 from report import build_report
-
+from notifier import send_report
 
 def main():
     config = load_config()
@@ -31,6 +31,7 @@ def main():
 
     report_file = build_report(jobs_with_analysis)
     print(f"\nReporte guardado en: {report_file}")
+    send_report(report_file)
 
 
 if __name__ == "__main__":
