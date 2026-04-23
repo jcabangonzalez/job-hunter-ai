@@ -8,7 +8,12 @@ def load_config():
 
 
 def load_jobs():
-    with open("data/sample_jobs.json") as f:
+    import os
+    import glob
+    files = sorted(glob.glob("data/jobs_*.json"))
+    if not files:
+        files = ["data/sample_jobs.json"]
+    with open(files[-1]) as f:
         return json.load(f)
 
 
