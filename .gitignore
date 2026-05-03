@@ -6,3 +6,4 @@ venv/
 __pycache__/
 *.pyc
 config.json
+chromedriver-linux64*
