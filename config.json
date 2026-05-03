@@ -1,11 +1,18 @@
+
 {
-    "keywords": ["python", "cybersecurity", "soc", "log analysis", "automation"],
-    "exclude": ["onsite", "principal", "director", "staff"],
-    "preferred_levels": ["entry", "junior", "intermediate"],
-    "max_age_days": 60,
-    "email": {
-      "sender": "jobhunteredrick@gmail.com",
-      "receiver": "jobhunteredrick@gmail.com",
-      "app_password": "kgsq oovc xnqd iiwh"
-    }
+  "keywords": ["python", "cybersecurity", "soc", "log analysis", "automation"],
+  "backup_keywords": ["security", "python", "remote", "freelance"],
+  "exclude": ["onsite", "principal", "director", "staff"],
+  "preferred_levels": ["entry", "junior", "intermediate"],
+  "max_age_days": 60,
+  "email": {
+    "sender": "jobhunteredrick@gmail.com",
+    "receiver": "jobhunteredrick@gmail.com",
+    "app_password": "llci zawf grta hpoz"
+  },
+  "upwork": {
+    "email": "19jeecg@proton.me",
+    "password": "Jj2Ca7v&%kNAZy"
   }
+}
+

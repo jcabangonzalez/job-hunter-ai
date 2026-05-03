@@ -8,6 +8,15 @@ def main():
     jobs = load_jobs()
     filtered = filter_jobs(jobs, config)
 
+    if not filtered:
+        print("⚠️ No jobs found with primary keywords. Trying backup...")
+        backup = config.get("backup_keywords")
+        filtered = filter_jobs(jobs, {"keywords": backup, **config}, config.get("exclude", []))
+    
+    if not filtered:
+        print("❌ No jobs found with backup keywords either. Exiting.")
+        return
+
     print("\nRESULTADOS ORDENADOS\n")
 
     jobs_with_analysis = []
