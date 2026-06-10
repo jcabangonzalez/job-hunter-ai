@@ -1,10 +1,9 @@
 venv/
 __pycache__/
 *.pyc
-reports/
-venv/
-__pycache__/
-*.pyc
 config.json
 chromedriver-linux64*
 seen_jobs.json
+data/*.json
+reports/
+jobs_report.md
