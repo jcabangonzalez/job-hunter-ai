@@ -11,7 +11,7 @@ def main():
     if not filtered:
         print("⚠️ No jobs found with primary keywords. Trying backup...")
         backup = config.get("backup_keywords")
-        filtered = filter_jobs(jobs, {"keywords": backup, **config}, config.get("exclude", []))
+        filtered = filter_jobs(jobs, {"keywords": backup, **config})
     
     if not filtered:
         print("❌ No jobs found with backup keywords either. Exiting.")
